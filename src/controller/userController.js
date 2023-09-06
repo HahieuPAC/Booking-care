@@ -25,7 +25,7 @@ let handleGetAllUser = async(req,res) => {
     let id = req.query.id; // All, id
     if(!id) {
         return res.status(200).json({
-            errCode: 0,
+            errCode: 1,
             errMessage: 'Missing required parameters',
             user: []
         })
